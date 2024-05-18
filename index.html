@@ -3,46 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <title>landing Page</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-      
-    <div class="container">
-        <h1>Calculator</h1>
-        <div class="calcicontainer">
-            <div class="calci">
-                <div class="display">
-                  
-                  <p id="operation"></p>
-                  
-                </div>
-                <div class="grid-container">
+    <header id="head">
+    <ul id="first-half">
+        <li>Get Started</li>
+        <li>Products</li>
+        <li>Filters</li>
+        <li>About</li>
+    </ul>
 
-                    <div class="grid-item" onclick="show(event)">9</div>
-                    <div class="grid-item"onclick="show(event)">8</div>
-                    <div class="grid-item"onclick="show(event)">7</div>
-                    
-                    <div class="grid-item"onclick="show(event)">/</div>
-                    <div class="grid-item"onclick="show(event)">6</div>
-                    <div class="grid-item"onclick="show(event)">5</div>
-                    <div class="grid-item"onclick="show(event)">4</div>
-                    <div class="grid-item"onclick="show(event)">*</div>
-                    <div class="grid-item"onclick="show(event)">3</div>
-                    <div class="grid-item"onclick="show(event)">2</div>
-                    <div class="grid-item"onclick="show(event)">1</div>
-                    <div class="grid-item"onclick="show(event)">-</div>
-                    <div class="grid-item"onclick="show(event)">0</div>
-                    <div class="grid-item"onclick="show(event)">.</div>
-                    <div class="grid-item" onclick="calculate()">=</div>
-                    <div class="grid-item"onclick="show(event)">+</div>
-                </div>
-                <div class="clear" onclick="delet(event)">C</div>
-            </div>
-        </div>
-    </div>
- 
-  <script  src="main.js"></script>
+    <h1 id="name">MidJourney</h1>
+
+    <ul id="second-half">
+        <li>Account<ion-icon name="person"></ion-icon></li>
+        <li><ion-icon name="search"></ion-icon></li>
+        <li><ion-icon name="cart"></ion-icon></li>
+        <li><img src="https://cdn.pixabay.com/photo/2012/04/10/23/03/india-26828_640.png" height="10px"width="20px"></li>
+    </ul>
+</header>
+
+<div id="body">
+
+<div id="content">
+    <h3>THE SCENT OF HAPPINESS</h3>
+    <h1>GIVE THE GIFT OF A LUXURY FEEL</h1>
+    <p>Midjourney Perfume: A fragrant passport to the captivating destinations of your soul.</p>
+    <button>Try me!</button>
+</div>
+
+<div id="brand">
+<h1>MidJourney</h1>
+<h4>Naturally Made</h4>
+</div>
+
+<div id="perfume_image">
+    <img src="./images/perfume.jpg">
+</div>
+
+</div>
 </body>
 </html>

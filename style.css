@@ -1,113 +1,116 @@
-@font-face{
-    font-family: digital;
-    src:url("./fonts/digital-7.ttf");
-
-}
-@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Jaini+Purva&family=Pacifico&family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaini+Purva&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+#head{
+    display: flex;
     background-color: white;
-    height: 550px;
-    width: 1250px;
-    overflow-y: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
 }
-.calcicontainer{
-    height: 450px;
+body{
+    background-color: #430A5D;
+    overflow: hidden;
+    cursor: pointer;
+}   
+    
+    
+#first-half,#second-half{
+    list-style-type: none;
+    display: flex;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    cursor: pointer;
+}
+ul li{
+    padding-top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #430A5D;
+}
+#first-half{
+    margin-left: 100px;
+}
+#second-half{
+    margin-left: 40px;
+}
+#name{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 5px;
+    font-family: "Norican", cursive;
+    letter-spacing: 2px;
+    color: #1f0f27;
+}
+#perfume_image{
+    float: right;
+    bottom: 0;
+    margin-right: -10px;
+    margin-left: 70px;
+}
+#perfume_image img{
+    height:600px; 
+    width :400px;
+
+}
+#content{
+    float: left;
+    height: 600px;
     width: 500px;
-    border-radius: 10px;
-    margin-left: 430px;
-    position: relative;
-    
+    margin-top: 150px;
+    margin-left: 50px;
+    line-height: 40px;
+    color: #bf6de4e4;
 }
-.calci{
-    height: 360px;
-    width:auto;
-    background-color: #0c0c0ceb;
-    border-radius: 15px;
-    margin: 50px;
-    position: absolute;
-
+#content p{
+    font-size: 20px;
+    font-family: "Sedan SC", serif;
+    text-align: center;
+    color: #c98de6f6;
 }
-.display{
-    
-}
-
-
-
-#operation{
-    height: 60px;
-    width: 270px;
-    background-color:#517841b3;
-    border-radius: 10px;
-    color:black ;
-    font-size: 55px;
-    margin-top: 8px;
-    margin-left: 8px;
+#content button{
+    height: 50px;
+    width: 150px;
+    margin-left: 150px;
+    border-radius: 25px;
+    font-size: 25px;
+    background-image: linear-gradient(to left,#bf6de4e4, #dfaef6);
+    box-shadow: 3px 3px 5px #d9abeff1;
     border: none;
-    position: absolute;
-    font-family: digital;
-    text-align: right;
-    
-    overflow: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    white-space: nowrap;
-    
 }
-#operation::-webkit-scrollbar {
-    display: none;
+#content h3{
+    font-family: "Pacifico", cursive;
+    text-align: CENTER;
+    word-spacing: 5px;
 }
-.grid-container{
-    display: grid;
-    column-gap: 10px;
-    row-gap: 10px;
-    grid-template-columns: 60px 60px 60px 60px;
-    padding: 15px;
-    margin-top: 80px;
-    padding-left: 0;
-}
-.grid-item{
-    background-color: #3c3a3abd;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 15px;
-    color: white;
+#content h1{
+    font-family: "Jaini Purva", system-ui;
+    word-spacing: 5px;
     text-align: center;
-    height: 20px;
-    width: 20px;
-    margin-left: 15px;
-    box-shadow: 3px 3px 5px #4c4444f5;
-    cursor:pointer;
-   
 }
-.clear{
-    background-color:#3c3a3abd ;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 15px;
-    color: white;
+#brand{
+   height: 200px;
+   width: 200px;
+   border-radius: 50%;
+   border: 10px solid rgb(205, 87, 205);
+   margin-left: 20px;
+   margin-top: 200px;
+   text-align: center;
+}
+#brand h1{
     text-align: center;
-    height: 20px;
-    width: 230px;
-    position: absolute;
-    margin-left: 15px;
-    margin-bottom: 8px;
-    box-shadow: 3px 3px 5px #4c4444f5;
+    margin-top: 70px;
+    color: #d69ef0e4;
 }
-.display{
-    height: 60px;
-    width: 300px;
-    display: contents;
-    margin: 15px;
-    position: relative;
-}
-.grid-item:hover{
-    transform: scale(1.1);
-}
-.clear:hover{
-    transform: scale(1.1);
-}
-h1{
-    color: #1E0342;
+#brand h4{
     text-align: center;
-    font-family: "Briem Hand", cursive;
+    font-size: 20px;
+    color: #dfaef6;
+    margin-top: 0;
+}
+#body{
+    display: flex;
 }
